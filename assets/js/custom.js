@@ -167,7 +167,11 @@ $("#contact_prev").on('click',function(){
         // Get the place details from the autocomplete object.
         var place = autocomplete.getPlace();
 
-        console.log(place)
+        document.getElementById('lat').value = place.geometry.location.lat();
+        document.getElementById('lng').value = place.geometry.location.lng();
+
+        //console.log();
+        //console.log(place.geometry.location.lng);
 
         // Get each component of the address from the place details
         // and fill the corresponding field on the form.
@@ -186,8 +190,7 @@ $("#contact_prev").on('click',function(){
         if (navigator.geolocation) {
           navigator.geolocation.getCurrentPosition(function(position) {
             console.log(position);
-            document.getElementById('lat').value = position.coords.latitude;
-            document.getElementById('lng').value = position.coords.longitude;
+            
             var geolocation = {
               lat: position.coords.latitude,
               lng: position.coords.longitude

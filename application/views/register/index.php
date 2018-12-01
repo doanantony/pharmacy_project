@@ -227,7 +227,7 @@
                   <input type="hidden" name="data_logo" id="data_logo">
                   <input type="hidden" name="data_image" id="data_image">
                   <input type="hidden" name="contact_form_data" id="contact_form_data">
-          <button type="button" class="submt-btn" id="contact_prev">Next</button>
+          <button type="button" class="submt-btn" id="contact_prev">Back</button>
                       <button type="submit" class="submt-btn" id="contact_submit">Confirm</button>
                     </form>
                    </div>
